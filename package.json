@@ -1,0 +1,32 @@
+{
+    "name": "ZUMOAPPNAME",
+    "version": "1.0.0",
+    "dependencies": {
+        "cordova-android": "^6.4.0",
+        "cordova-ios": "4.2.0",
+        "cordova-plugin-device": "~2.0.1",
+        "cordova-plugin-inappbrowser": "~1.5.0",
+        "cordova-plugin-ms-azure-mobile-apps": "^2.0.0",
+        "cordova-plugin-whitelist": "^1.3.3",
+        "cordova-sqlite-storage": "~1.4.8",
+        "cordova-windows": "4.4.2",
+        "phonegap-plugin-push": "^2.1.2"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-ms-azure-mobile-apps": {},
+            "cordova-plugin-device": {},
+            "cordova-plugin-inappbrowser": {},
+            "cordova-sqlite-storage": {},
+            "phonegap-plugin-push": {
+                "SENDER_ID": "892697691399"
+            }
+        },
+        "platforms": [
+            "ios",
+            "windows",
+            "android"
+        ]
+    }
+}
