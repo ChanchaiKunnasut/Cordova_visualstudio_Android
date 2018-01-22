@@ -119,11 +119,12 @@
             var platform = device.platform;
             // Get the handle returned during registration.
             var handle = data.registrationId;
-            // Set the device-specific message template.
+            // Set the device-specific message template.                                                                                                    
             if (platform == 'android' || platform == 'Android') {
                 // Register for GCM notifications.
                 client.push.register('gcm', handle, {
-                    mytemplate: { body: { data: { message: "{$(messageParam)}" } } }
+                    mytemplate: { body: { data: { message: "{$(messageParam)}" } },
+                    tags: ["Note5"]}
                 });
             } else if (device.platform === 'iOS') {
                 // Register for notifications.
