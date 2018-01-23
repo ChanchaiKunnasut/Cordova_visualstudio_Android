@@ -90,18 +90,18 @@
      * Set up the tables, event handlers and load data from the server 
      */
     function setup() {
-                // Create a table reference
-                todoItemTable = client.getTable('todoitem');
+        // Create a table reference
+        todoItemTable = client.getTable('todoitem');
 
-                // Refresh the todoItems
-                refreshDisplay();
+        // Refresh the todoItems
+        refreshDisplay();
 
-                // Wire up the UI Event Handler for the Add Item
-                $('#add-item').submit(addItemHandler);
-                $('#refresh').on('click', refreshDisplay);
+        // Wire up the UI Event Handler for the Add Item
+        $('#add-item').submit(addItemHandler);
+        $('#refresh').on('click', refreshDisplay);
 
-                // Added to register for push notifications.
-                registerForPushNotifications();
+        // Added to register for push notifications.
+        registerForPushNotifications();
     }
 
     // Register for Push Notifications. Requires that phonegap-plugin-push be installed.
@@ -123,8 +123,7 @@
             if (platform == 'android' || platform == 'Android') {
                 // Register for GCM notifications.
                 client.push.register('gcm', handle, {
-                    mytemplate: { body: { data: { message: "{$(messageParam)}" } },
-                    tags: ["Note5"]}
+                    mytemplate: { body: { data: { message: "{$(messageParam)}" } } }
                 });
             } else if (device.platform === 'iOS') {
                 // Register for notifications.
