@@ -119,6 +119,7 @@
             var platform = device.platform;
             // Get the handle returned during registration.
             var handle = data.registrationId;
+            alert('Registration Successful: ' + handle );
             // Set the device-specific message template.                                                                                                    
             if (platform == 'android' || platform == 'Android') {
                 // Register for GCM notifications.

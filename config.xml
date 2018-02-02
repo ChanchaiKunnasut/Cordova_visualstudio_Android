@@ -105,5 +105,5 @@
     </plugin>
     <engine name="ios" spec="4.2.0" />
     <engine name="windows" spec="4.4.2" />
-    <engine name="android" spec="^6.4.0" />
+    <engine name="android" spec="~6.4.0" />
 </widget>
