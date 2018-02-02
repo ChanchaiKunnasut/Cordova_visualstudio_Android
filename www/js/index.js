@@ -122,9 +122,7 @@
             // Set the device-specific message template.                                                                                                    
             if (platform == 'android' || platform == 'Android') {
                 // Register for GCM notifications.
-                client.push.register('gcm', handle, {
-                    mytemplate: { body: { data: { message: "{$(messageParam)}" } } }
-                });
+                client.push.register('gcm', handle);
             } else if (device.platform === 'iOS') {
                 // Register for notifications.
                 client.push.register('apns', handle, {
